@@ -1,0 +1,174 @@
+{
+  "project_info": {
+    "project_number": "869793752888",
+    "firebase_url": "https://aidm-2018.firebaseio.com",
+    "project_id": "aidm-2018",
+    "storage_bucket": "aidm-2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869793752888:android:d484177ebc928c3d",
+        "android_client_info": {
+          "package_name": "com.example.caurica.my_app_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869793752888-id6ghg2594tbl1b9trqjvoqf8tr7jbd7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.caurica.my_app_2",
+            "certificate_hash": "c04bd7289ab970c76adb78933a110b3bf8b1f32a"
+          }
+        },
+        {
+          "client_id": "869793752888-s05bhcpu0bvnn46psaa9af03l6h7e69i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcMW1CLnxXyMCWX374qSDb1r7900xPnHM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869793752888-s05bhcpu0bvnn46psaa9af03l6h7e69i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869793752888:android:9e318acf00cdbb13",
+        "android_client_info": {
+          "package_name": "com.example.scomin.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869793752888-s05bhcpu0bvnn46psaa9af03l6h7e69i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcMW1CLnxXyMCWX374qSDb1r7900xPnHM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869793752888:android:ea84c253b6cd9944",
+        "android_client_info": {
+          "package_name": "com.example.scomin.thermostat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869793752888-etrc86a8ktao4i8mtogos7v381kjc2lh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.scomin.thermostat",
+            "certificate_hash": "b92949ebc1518bd29d4041fc112e0142cb9c6cd1"
+          }
+        },
+        {
+          "client_id": "869793752888-s05bhcpu0bvnn46psaa9af03l6h7e69i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcMW1CLnxXyMCWX374qSDb1r7900xPnHM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869793752888-s05bhcpu0bvnn46psaa9af03l6h7e69i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869793752888:android:98bad7ee50f8e2ba",
+        "android_client_info": {
+          "package_name": "com.example.termostat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869793752888-k4si15i99iuiic7cgg999s4bcvn77nq7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.termostat",
+            "certificate_hash": "a747983064c51956659bf5267f4415fea5aa1b89"
+          }
+        },
+        {
+          "client_id": "869793752888-s05bhcpu0bvnn46psaa9af03l6h7e69i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcMW1CLnxXyMCWX374qSDb1r7900xPnHM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869793752888-s05bhcpu0bvnn46psaa9af03l6h7e69i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
