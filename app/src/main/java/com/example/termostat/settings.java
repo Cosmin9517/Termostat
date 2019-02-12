@@ -4,7 +4,10 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.TimePickerDialog;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -98,27 +101,85 @@ public class settings extends AppCompatActivity {
 
     }
     public void clickZi(View v){
+
+        TextView luni = findViewById(R.id.label_luni);
+        TextView marti = findViewById(R.id.label_marti);
+        TextView miercuri = findViewById(R.id.label_miercuri);
+        TextView joi = findViewById(R.id.label_joi);
+        TextView vineri = findViewById(R.id.label_Vineri);
+        TextView sambata = findViewById(R.id.label_sambata);
+        TextView duminica = findViewById(R.id.label_duminica);
+
         switch (v.getId()){
             case (R.id.label_luni):
                 setup_settings(1);
+                luni.setBackgroundResource(R.drawable.buton);
+                marti.setBackgroundResource(0);
+                miercuri.setBackgroundResource(0);
+                joi.setBackgroundResource(0);
+                vineri.setBackgroundResource(0);
+                sambata.setBackgroundResource(0);
+                duminica.setBackgroundResource(0);
                 break;
             case (R.id.label_marti):
                 setup_settings(2);
+                luni.setBackgroundResource(0);
+                marti.setBackgroundResource(R.drawable.buton);
+                miercuri.setBackgroundResource(0);
+                joi.setBackgroundResource(0);
+                vineri.setBackgroundResource(0);
+                sambata.setBackgroundResource(0);
+                duminica.setBackgroundResource(0);
                 break;
             case (R.id.label_miercuri):
                 setup_settings(3);
+                luni.setBackgroundResource(0);
+                marti.setBackgroundResource(0);
+                miercuri.setBackgroundResource(R.drawable.buton);
+                joi.setBackgroundResource(0);
+                vineri.setBackgroundResource(0);
+                sambata.setBackgroundResource(0);
+                duminica.setBackgroundResource(0);
                 break;
             case (R.id.label_joi):
                 setup_settings(4);
+                luni.setBackgroundResource(0);
+                marti.setBackgroundResource(0);
+                miercuri.setBackgroundResource(0);
+                joi.setBackgroundResource(R.drawable.buton);
+                vineri.setBackgroundResource(0);
+                sambata.setBackgroundResource(0);
+                duminica.setBackgroundResource(0);
                 break;
             case (R.id.label_Vineri):
                 setup_settings(5);
+                luni.setBackgroundResource(0);
+                marti.setBackgroundResource(0);
+                miercuri.setBackgroundResource(0);
+                joi.setBackgroundResource(0);
+                vineri.setBackgroundResource(R.drawable.buton);
+                sambata.setBackgroundResource(0);
+                duminica.setBackgroundResource(0);
                 break;
             case (R.id.label_sambata):
                 setup_settings(6);
+                luni.setBackgroundResource(0);
+                marti.setBackgroundResource(0);
+                miercuri.setBackgroundResource(0);
+                joi.setBackgroundResource(0);
+                vineri.setBackgroundResource(0);
+                sambata.setBackgroundResource(R.drawable.buton);
+                duminica.setBackgroundResource(0);
                 break;
             case (R.id.label_duminica):
                 setup_settings(7);
+                luni.setBackgroundResource(0);
+                marti.setBackgroundResource(0);
+                miercuri.setBackgroundResource(0);
+                joi.setBackgroundResource(0);
+                vineri.setBackgroundResource(0);
+                sambata.setBackgroundResource(0);
+                duminica.setBackgroundResource(R.drawable.buton);
                 break;
 
         }
@@ -224,6 +285,8 @@ public class settings extends AppCompatActivity {
             return false;
         return true;
     }
+
+    /* ToDo - completat/ajustat functie
     public void validare_intervale_orare(View v){
 
         TextView dayStart = findViewById(R.id.dayStart);
@@ -256,7 +319,7 @@ public class settings extends AppCompatActivity {
         }
 
 
-    }
+    }*/
 
 }
 

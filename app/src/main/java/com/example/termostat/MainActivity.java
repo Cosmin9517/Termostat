@@ -25,9 +25,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
+    private static final int MY_PERMISSIONS_REQUEST_SEND_SMS = 1;
     //Trimitere mesaj
-    private static final int MY_PERMISSIONS_REQUEST_SEND_SMS =0 ;
-    String numar_tel = "0752142567";
+    String numar_tel = "0757472603";
     String mesaj;
 
     //baza de date
@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         final ImageView temp_view = findViewById(R.id.buton_temperatura);
         final ImageView umid_view = findViewById(R.id.buton_umiditate);
         temp_view.setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.MULTIPLY);
+        checkSMSMessage();
 
 
         temp_view.setOnClickListener(new View.OnClickListener() {
@@ -111,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
     public void sendSMSMessage(){
         try {
             SmsManager smsManager = SmsManager.getDefault();
@@ -126,8 +128,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-/*
-    protected void sendSMSMessage() {
+
+    protected void checkSMSMessage() {
 
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.SEND_SMS)
@@ -141,18 +143,25 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
+/*
     @Override
     public void onRequestPermissionsResult(int requestCode,String permissions[], int[] grantResults) {
         switch (requestCode) {
             case MY_PERMISSIONS_REQUEST_SEND_SMS: {
                 if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {try {
                     SmsManager smsManager = SmsManager.getDefault();
                     smsManager.sendTextMessage(numar_tel, null, mesaj, null, null);
-                    Toast.makeText(getApplicationContext(), "SMS trimis.",
+                    Toast.makeText(getApplicationContext(), "Mesaj trimis!",
                             Toast.LENGTH_LONG).show();
-                } else {
+                } catch (Exception e) {
+                    Toast.makeText(getApplicationContext(),
+                            "Mesajul nu s-a putut trimite!",
+                            Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
+                        }
+                }
+                else {
                     Toast.makeText(getApplicationContext(),
                             "Nu s-a reusit trimiterea mesajului!", Toast.LENGTH_LONG).show();
                     return;
@@ -160,8 +169,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-    }*/
-
+    }
+*/
     public void goto_settings(View view){
         Intent intent = new Intent(MainActivity.this, settings.class);
         startActivity(intent);
